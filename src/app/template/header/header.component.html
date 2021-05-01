@@ -1,0 +1,23 @@
+  <mat-toolbar class="mat-elevation-z2">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <h1 class="title mr-auto">Instamovies</h1>
+        <div class="row pt-2">
+          <div class="col">
+            <img
+              [src]="'/assets/img/' + user.avatar"
+              width="90"
+              class="avatar rounded-circle mt-2 mb-2"
+              [title]="user.name"
+            />
+          </div>
+          <div class="col user-info p-0">
+            <p class="mt-2 mb-0 font-weight-bold">{{ user.name }}</p>
+            <p class="mt-n2 mb-0 info">{{posts?.length}} Posts</p>
+            <p class="mt-n3 mb-0 info">{{likes}} Likes</p>
+            <p class="mt-n3 info">{{comments}} Comments</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-toolbar>

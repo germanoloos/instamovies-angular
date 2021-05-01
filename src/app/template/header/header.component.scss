@@ -1,0 +1,24 @@
+.title {
+    font-family: Billabong;
+    font-size: 45px;
+}
+
+mat-toolbar {
+    background-color: white;
+    .user-info {
+        font-size: 15px;
+    }
+    .info{
+        font-size: 13px;
+    }
+}
+.mat-toolbar-single-row {
+    height: auto;
+}
+
+mat-toolbar {
+    position: fixed;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top: 0; /* Sets the sticky toolbar to be on top */
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+}
