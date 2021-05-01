@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: process.env.API_URL || 'http://localhost:3001',
+  apiUrl: 'https://instamovies-backend.herokuapp.com/',
   localStoragePersistence: true
 };
 
