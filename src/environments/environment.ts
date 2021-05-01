@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:3001',
+  apiUrl: process.env.API_URL || 'http://localhost:3001',
   localStoragePersistence: true
 };
 
